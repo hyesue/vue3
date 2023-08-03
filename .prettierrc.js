@@ -1,0 +1,25 @@
+module.exports = {
+  printWidth: 80,
+  tabWidth: 2,
+  useTabs: false,
+  semi: true,
+  singleQuote: true,
+  jsxSingleQuote: false,
+  trailingComma: 'all',
+  bracketSpacing: false,
+  bracketSameLine: false,
+  rangeStart: 0,
+  rangeEnd: Number.POSITIVE_INFINITY,
+  requirePragma: false,
+  insertPragma: false,
+  proseWrap: 'preserve',
+  arrowParens: 'always',
+  htmlWhitespaceSensitivity: 'css',
+  endOfLine: 'lf',
+  quoteProps: 'consistent',
+  vueIndentScriptAndStyle: false,
+  embeddedLanguageFormatting: 'auto',
+  // parser: 'flow', // 이 부분은 주석 처리합니다.
+  // usePrettierrc: false, // 이 부분은 주석 처리합니다.
+  eslintIntegration: true,
+};

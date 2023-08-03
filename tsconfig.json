@@ -1,41 +1,39 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+	"compilerOptions": {
+		"forceConsistentCasingInFileNames": true,
+		"target": "esnext",
+		"module": "commonjs",
+		"allowJs": true,
+		"strict": true,
+		"declaration": true,
+		"declarationDir": "dist/types",
+		"declarationMap": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"newLine": "lf",
+		"types": ["vite/client", "node", "vue"],
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+		"baseUrl": ".",
+		"paths": {
+			"src/*": ["src/*"]
+		}
+	},
+	"vueCompilerOptions": {
+		"target": 2.7
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"cypress/**/*.ts",
+		"shims-vue.d.ts"
+	]
 }
