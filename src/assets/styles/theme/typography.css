@@ -1,0 +1,100 @@
+:root {
+  /*
+		stds global typography variables
+	*/
+  --glob-typography-font-size-7xl: 5rem;
+  --glob-typography-font-size-6xl: 4.2rem;
+  --glob-typography-font-size-6xl: 4.2rem;
+  --glob-typography-font-size-5xl: 3.2rem;
+  --glob-typography-font-size-4xl: 2.4rem;
+  --glob-typography-font-size-3xl: 2rem;
+  --glob-typography-font-size-2xl: 1.8rem;
+  --glob-typography-font-size-xl: 1.6rem;
+  --glob-typography-font-size-lg: 1.5rem;
+  --glob-typography-font-size-md: 1.4rem;
+  --glob-typography-font-size-sm: 1.3rem;
+  --glob-typography-font-size-xs: 1.2rem;
+  --glob-typography-font-size-2xs: 1.1rem;
+
+  --glob-typography-line-height-6xl: 7rem;
+  --glob-typography-line-height-5xl: 5.6rem;
+  --glob-typography-line-height-4xl: 4.4rem;
+  --glob-typography-line-height-3xl: 3.4rem;
+  --glob-typography-line-height-2xl: 3rem;
+  --glob-typography-line-height-xl: 2.6rem;
+  --glob-typography-line-height-lg: 2.4rem;
+  --glob-typography-line-height-md: 2.2rem;
+  --glob-typography-line-height-sm: 2rem;
+  --glob-typography-line-height-xs: 1.8rem;
+
+  --glob-typography-font-weight-regular: 400;
+  --glob-typography-font-weight-medium: 500;
+  --glob-typography-font-weight-blod: 700;
+
+  /*
+		stds semantic typography variables
+	*/
+  --sem-typography-font-size-title1: var(--glob-typography-font-size-7xl);
+  --sem-typography-line-height-title1: var(--glob-typography-line-height-6xl);
+  --sem-typography-font-weight-title1: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-title2: var(--glob-typography-font-size-6xl);
+  --sem-typography-line-height-title2: var(--glob-typography-line-height-5xl);
+  --sem-typography-font-weight-title2: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-title3: var(--glob-typography-font-size-5xl);
+  --sem-typography-line-height-title3: var(--glob-typography-line-height-4xl);
+  --sem-typography-font-weight-title3: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-title4: var(--glob-typography-font-size-4xl);
+  --sem-typography-line-height-title4: var(--glob-typography-line-height-3xl);
+  --sem-typography-font-weight-title4: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-title5: var(--glob-typography-font-size-3xl);
+  --sem-typography-line-height-title5: var(--glob-typography-line-height-2xl);
+  --sem-typography-font-weight-title5: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-title6: var(--glob-typography-font-size-2xl);
+  --sem-typography-line-height-title6: var(--glob-typography-line-height-xl);
+  --sem-typography-font-weight-title6: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-title7: var(--glob-typography-font-size-xl);
+  --sem-typography-line-height-title7: var(--glob-typography-line-height-lg);
+  --sem-typography-font-weight-title7: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-title8: var(--glob-typography-font-size-md);
+  --sem-typography-line-height-title8: var(--glob-typography-line-height-sm);
+  --sem-typography-font-weight-title8: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-text1: var(--glob-typography-font-size-xl);
+  --sem-typography-line-height-text1: var(--glob-typography-line-height-xl);
+
+  --sem-typography-font-size-text2: var(--glob-typography-font-size-lg);
+  --sem-typography-line-height-text2: var(--glob-typography-line-height-lg);
+
+  --sem-typography-font-size-text3: var(--glob-typography-font-size-md);
+  --sem-typography-line-height-text3: var(--glob-typography-line-height-lg);
+
+  --sem-typography-font-size-text4: var(--glob-typography-font-size-sm);
+  --sem-typography-line-height-text4: var(--glob-typography-line-height-md);
+
+  --sem-typography-font-size-btn1: var(--glob-typography-font-size-xl);
+  --sem-typography-line-height-btn1: var(--glob-typography-line-height-lg);
+  --sem-typography-font-weight-btn1: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-btn2: var(--glob-typography-font-size-md);
+  --sem-typography-line-height-btn2: var(--glob-typography-line-height-sm);
+  --sem-typography-font-weight-btn2: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-btn3: var(--glob-typography-font-size-xs);
+  --sem-typography-line-height-btn3: var(--glob-typography-line-height-xs);
+  --sem-typography-font-weight-btn3: var(--glob-typography-font-weight-medium);
+
+  --sem-typography-font-size-cap1: var(--glob-typography-font-size-xs);
+  --sem-typography-line-height-cap1: var(--glob-typography-line-height-xs);
+  --sem-typography-font-weight-cap1: var(--glob-typography-font-weight-regular);
+
+  --sem-typography-font-size-cap2: var(--glob-typography-font-size-2xs);
+  --sem-typography-line-height-cap2: var(--glob-typography-line-height-xs);
+  --sem-typography-font-weight-cap2: var(--glob-typography-font-weight-regular);
+}

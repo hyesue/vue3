@@ -1,0 +1,360 @@
+/*@import "./tokens.css";*/
+/*@import './font.css';*/
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+  --vt-c-indigo: #2c3e50;
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+  --section-gap: 160px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+/* font */
+@font-face {
+  font-family: 'font-icon';
+  src: url('./styles/fonts/icofonts.eot');
+  src:
+    url('./styles/fonts/icofonts.eot') format('embedded-opentype'),
+    url('./styles/fonts/icofonts.woff2') format('woff2'),
+    url('./styles/fonts/icofonts.ttf') format('truetype'),
+    url('./styles/fonts/icofonts.woff') format('woff'),
+    url('./styles/fonts/icofonts.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon {
+  display: inline-flex;
+}
+.icon::after,
+.icon::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'font-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* base */
+html {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-wrap: normal;
+  font-weight: normal;
+  word-break: normal;
+  word-wrap: break-word;
+}
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.025em;
+}
+body,
+a,
+button,
+input,
+textarea {
+  font-family: '-apple-system', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif',
+    'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 한국어 */
+:lang(ko) body,
+:lang(ko) a,
+:lang(ko) button,
+:lang(ko) input,
+:lang(ko) textarea {
+  font-family: 'font-kr', '-apple-system', 'Segoe UI', 'Helvetica', 'Arial',
+    'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 영어 */
+:lang(en) body,
+:lang(en) a,
+:lang(en) button,
+:lang(en) input,
+:lang(en) textarea {
+  font-family: 'font-global', '-apple-system', 'Segoe UI', 'Helvetica', 'Arial',
+    'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 중국어 간체 */
+:lang(zh) body,
+:lang(zh) a,
+:lang(zh) button,
+:lang(zh) input,
+:lang(zh) textarea {
+  font-family: 'Microsoft YaHei UI', '-apple-system', 'Segoe UI', 'Helvetica',
+    'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 중국어 번체 */
+:lang(zh-Hant) body,
+:lang(zh-Hant) a,
+:lang(zh-Hant) button,
+:lang(zh-Hant) input,
+:lang(zh-Hant) textarea {
+  font-family: 'Microsoft JhengHei UI', '-apple-system', 'Segoe UI', 'Helvetica',
+    'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 일본어 */
+:lang(ja) body,
+:lang(ja) a,
+:lang(ja) button,
+:lang(ja) input,
+:lang(ja) textarea {
+  font-family: 'Meiryo', 'Yu Gothic UI', '-apple-system', 'Segoe UI',
+    'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 프랑스어 */
+:lang(fr) body,
+:lang(fr) a,
+:lang(fr) button,
+:lang(fr) input,
+:lang(fr) textarea {
+  font-family: 'font-global', '-apple-system', 'Segoe UI', 'Helvetica', 'Arial',
+    'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 포르투갈어 */
+:lang(pt) body,
+:lang(pt) a,
+:lang(pt) button,
+:lang(pt) input,
+:lang(pt) textarea {
+  font-family: 'font-global', '-apple-system', 'Segoe UI', 'Helvetica', 'Arial',
+    'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 스페인어 */
+:lang(es) body,
+:lang(es) a,
+:lang(es) button,
+:lang(es) input,
+:lang(es) textarea {
+  font-family: 'font-global', '-apple-system', 'Segoe UI', 'Helvetica', 'Arial',
+    'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 독일어 */
+:lang(de) body,
+:lang(de) a,
+:lang(de) button,
+:lang(de) input,
+:lang(de) textarea {
+  font-family: 'font-global', '-apple-system', 'Segoe UI', 'Helvetica', 'Arial',
+    'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+/* 태국어 */
+:lang(th) body,
+:lang(th) a,
+:lang(th) button,
+:lang(th) input,
+:lang(th) textarea {
+  font-family: 'Leelawadee UI', '-apple-system', 'Segoe UI', 'Helvetica',
+    'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+i,
+em {
+  font-style: normal;
+}
+a {
+  outline-width: 0px;
+  text-decoration: none;
+}

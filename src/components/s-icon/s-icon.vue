@@ -7,7 +7,7 @@
     :aria-labelledby="iconName"
     role="presentation"
   >
-    <title :id="iconName" lang="en">{{ iconName }} icon</title>
+    <title :id="iconName" :lang="lang">{{ iconLabel }}</title>
     <g :fill="iconColor">
       <slot />
     </g>
@@ -22,6 +22,10 @@ export default {
       type: String,
       default: 'box',
     },
+    iconLabel: {
+      type: String,
+      default: '',
+    },
     width: {
       type: [Number, String],
       default: 18,
@@ -33,6 +37,10 @@ export default {
     iconColor: {
       type: String,
       default: 'currentColor',
+    },
+    lang: {
+      type: String,
+      default: 'ko',
     },
   },
 };

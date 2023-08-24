@@ -1,0 +1,31 @@
+$module: 'myicon';
+
+.#{$module} {
+  line-height: 1;
+  vertical-align: middle;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  
+  &:before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    vertical-align: bottom;
+  }
+  
+  &--more:before{
+    background-image: url('../assets/icon-more.svg'); 
+  }
+}
+
+.hover .#{$module} {
+  &--more:before{
+    background-image: url('../assets/icon-more-hover.svg'); 
+  }
+}

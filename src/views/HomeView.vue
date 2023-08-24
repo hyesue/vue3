@@ -13,6 +13,7 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
   components: {
     HelloWorld,
   },
+  layout: 'MainLayout', // 다른 레이아웃 사용
 })
 export default class HomeView extends Vue {}
 </script>

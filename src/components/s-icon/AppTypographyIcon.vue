@@ -37,10 +37,13 @@
       <icon-base><icon-box /></icon-base>
       You can use whatever icon you want and keep the base consistent with slots
     </p>
+    <h2>SIcon</h2>
+    <SIcon icon-name="moon" iconLabel="달"><IconMoon /></SIcon>
   </section>
 </template>
 
 <script>
+import SIcon from './s-icon.vue';
 import IconBase from './IconBase.vue';
 import IconEnvelope from './icon/IconEnvelope.vue';
 import IconCalendar from './icon/IconCalendar.vue';
@@ -52,6 +55,7 @@ import IconBox from './icon/IconBox.vue';
 
 export default {
   components: {
+    SIcon,
     IconBase,
     IconEnvelope,
     IconCalendar,

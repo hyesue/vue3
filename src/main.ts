@@ -1,3 +1,4 @@
+import './assets/styles/common.scss';
 import {createApp} from 'vue';
 import App from './App.vue';
 import './registerServiceWorker';
@@ -14,7 +15,7 @@ const messages = {
 };
 
 const i18n = createI18n({
-  locale: 'ko', // 기본 언어 설정
+  locale: 'en', // 기본 언어 설정
   messages,
 });
 

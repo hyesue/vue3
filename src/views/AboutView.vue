@@ -17,6 +17,7 @@ import SIcon from '@/components/s-icon/s-icon.vue'; // @ is an alias to /src
     AppTypographyIcon,
     AppAnimatedIcon,
   },
+  layout: 'DefaultLayout', // 다른 레이아웃 사용
 })
 export default class AboutView extends Vue {}
 </script>

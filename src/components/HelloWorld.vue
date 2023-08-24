@@ -1,5 +1,8 @@
 <template>
   <div class="hello">
+    <p>{{ $t('hello') }}</p>
+    <p>{{ $t('greeting') }}</p>
+    <LocaleSwitcher />
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
@@ -120,10 +123,14 @@
 
 <script lang="ts">
 import {Options, Vue} from 'vue-class-component';
+import LocaleSwitcher from './locale-switcher/LocaleSwitcher.vue';
 
 @Options({
   props: {
     msg: String,
+  },
+  components: {
+    LocaleSwitcher,
   },
 })
 export default class HelloWorld extends Vue {

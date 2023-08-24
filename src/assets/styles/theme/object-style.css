@@ -1,0 +1,35 @@
+:root {
+  /*
+		global border radius variables
+	*/
+  --glob-border-radius-none: 0px;
+  --glob-border-radius-sm: 0.2rem;
+  --glob-border-radius-md: 0.4rem;
+  --glob-border-radius-lg: 0.8rem;
+  --glob-border-radius-full: 9999px;
+  /*
+		global border width variables
+	*/
+  --glob-border-width-0: 0;
+  --glob-border-width-1: 1px;
+  --glob-border-width-2: 0.2rem;
+  /*
+		global box shadow variables
+	*/
+  --glob-box-shadow-0: none;
+  --glob-box-shadow-2: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
+  --glob-box-shadow-4: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+  --glob-box-shadow-8: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.15);
+  --glob-box-shadow-12: 0 1.2rem 2.8rem rgba(0, 0, 0, 0.2);
+  /*
+		global z-index variables
+	*/
+  --glob-z-index-base: 0;
+  --glob-z-index-docked: 10;
+  --glob-z-index-dropdown: 500;
+  --glob-z-index-tooltip: 600;
+  --glob-z-index-sticky: 1000;
+  --glob-z-index-overlay: 2000;
+  --glob-z-index-modal: 2500;
+  --glob-z-index-toast: 3000;
+}
