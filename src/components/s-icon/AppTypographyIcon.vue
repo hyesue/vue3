@@ -38,6 +38,10 @@
       You can use whatever icon you want and keep the base consistent with slots
     </p>
     <h2>SIcon</h2>
+    <SButton>Click me</SButton>
+    <SButton variant="secondary" size="small" :disabled="true">
+      Disabled button
+    </SButton>
     <SIcon icon-name="moon" iconLabel="달"><IconMoon /></SIcon>
   </section>
 </template>
@@ -52,6 +56,7 @@ import IconImage from './icon/IconImage.vue';
 import IconWrite from './icon/IconWrite.vue';
 import IconMoon from './icon/IconMoon.vue';
 import IconBox from './icon/IconBox.vue';
+import SButton from '../s-button/s-button.vue';
 
 export default {
   components: {
@@ -64,6 +69,7 @@ export default {
     IconWrite,
     IconMoon,
     IconBox,
+    SButton,
   },
 };
 </script>
