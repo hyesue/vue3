@@ -43,6 +43,7 @@
       Disabled button
     </SButton>
     <SIcon icon-name="moon" iconLabel="달"><IconMoon /></SIcon>
+    <SIcons />
   </section>
 </template>
 
@@ -57,6 +58,7 @@ import IconWrite from './icon/IconWrite.vue';
 import IconMoon from './icon/IconMoon.vue';
 import IconBox from './icon/IconBox.vue';
 import SButton from '../s-button/s-button.vue';
+import SIcons from '../s-icon2/s-icons.vue';
 
 export default {
   components: {
@@ -70,6 +72,7 @@ export default {
     IconMoon,
     IconBox,
     SButton,
+    SIcons,
   },
 };
 </script>
